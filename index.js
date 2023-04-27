@@ -37,27 +37,6 @@ let database = [
 
 let body = document.querySelector("body");
 
-let newCard = document.querySelector(".card");
-let newDiv = document.createElement("div");
-newDiv.className = "card";
-let newImg = document.createElement("img");
-newImg.src = "./img/iron-man.png";
-newDiv.appendChild(newImg);
-newCard.appendChild(newDiv);
-document.body.appendChild(newCard);
-
-let innerDiv = document.createElement("div");
-innerDiv.className = "card-body";
-let h5 = (document.createElement("h5").innerText = "Iron Man");
-let p = document.createElement("p");
-p.innerText =
-  "Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics.";
-innerDiv.append(h5);
-innerDiv.append(p);
-newDiv.appendChild(innerDiv);
-
-//==========================================
-
 database.forEach((result, i) => {
   // Create card element
   cloneBox = document.createElement("div");
@@ -72,5 +51,24 @@ database.forEach((result, i) => {
   </div>
   `;
   body.appendChild(cloneBox);
-  console.log(result);
 });
+
+//==========================================
+// let newCard = document.querySelector(".card");
+// let newDiv = document.createElement("div");
+// newDiv.className = "card";
+// let newImg = document.createElement("img");
+// newImg.src = "./img/iron-man.png";
+// newDiv.appendChild(newImg);
+// newCard.appendChild(newDiv);
+// document.body.appendChild(newCard);
+
+// let innerDiv = document.createElement("div");
+// innerDiv.className = "card-body";
+// let h5 = (document.createElement("h5").innerText = "Iron Man");
+// let p = document.createElement("p");
+// p.innerText =
+//   "Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics.";
+// innerDiv.append(h5);
+// innerDiv.append(p);
+// newDiv.appendChild(innerDiv);
