@@ -65,8 +65,8 @@ database.forEach((result, i) => {
 
   // Construct card content
   cloneBox.innerHTML = `
-  <img src='${database[i]}.path'>
-  div class='card-body'>
+  <img src='${database[i].path}'>
+  <div class='card-body'>
   <h5>${database[i].name}</h5>
   <p>${database[i].bio}</p>
   </div>
